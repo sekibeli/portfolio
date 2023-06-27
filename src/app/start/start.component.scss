@@ -1,0 +1,117 @@
+.bgContainer {
+    display: flex;
+    background: linear-gradient(180deg, #FFF 0%, #EAF0FF 100%);
+    height: 100vh;
+    color: #5988FF;
+
+
+
+}
+
+.startLeft {
+    position: relative;
+    width: 50vw;
+
+}
+
+.startRight {
+    position: relative;
+    width: 50vw;
+    padding-top: 130px;
+
+}
+
+.ellipse3 {
+    position: absolute;
+    left: -25%;
+    top: -20%;
+    height: 800px;
+    width: 800px;
+    border-radius: 100%;
+    background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+
+}
+
+.ellipse5 {
+    position: absolute;
+    bottom: -100px;
+    left: 45%;
+    width: 206px;
+    height: 206px;
+    flex-shrink: 0;
+    border-radius: 206px;
+    background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+}
+
+.passion {
+    font-family: 'Baloo 2', 'sans-serif';
+    color: #5988FF;
+    font-size: 128px;
+}
+
+
+.head1 {
+    height: 36px;
+    color: #5988FF;
+    font-size: 3em;
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.head2 {
+    font-family: 'Baloo 2';
+    font-size: 120px;
+    font-weight: 700;
+    height: 114px;
+}
+
+.head3 {
+    font-family: 'Baloo 2';
+    font-size: 110px;
+    font-weight: 700;
+    height: 110px;
+}
+
+.me1 {
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+   
+
+    .portraitPic {
+        width: 600px;
+        margin: -5px;
+    }
+}
+
+
+
+.lineDown {
+    width: 2px;
+    background-color: #5988FF;
+    height: 35vh;
+
+}
+
+.scroll {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    right: 50%;
+
+    .scrollText {
+        padding: 5px;
+    }
+
+}
+.contactButtons {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
