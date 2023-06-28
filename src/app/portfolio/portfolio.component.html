@@ -1,1 +1,29 @@
-<p>portfolio works!</p>
+<div class="start">
+    <div class="flyingLeft"><h2>My work</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod fugit tenetur earum doloremque, sapiente ex sint iste possimus reprehenderit explicabo reiciendis nam non odit dolorum sequi eligendi enim ducimus?</p></div>
+    <div class="flyingRight">
+        <div class="ellipse8"></div>
+    </div>
+ </div>
+<div class="contentContainer">
+ 
+    <div class="workBox" *ngFor="let work of allWork; let i = index">
+        <div [ngClass]="{'reverse': i%2 === 0}" class="workContainer">
+            <div class="flyingLeft">
+                <img src="../../assets/img/work/{{work.img}}.png" alt="">
+            </div>
+            <div class="flyingRight">
+                <div>
+                    <h3>{{work.title}}</h3>
+                    <span>{{work.dev}}</span>
+                    <p>{{work.description}}</p>
+                    <div>
+                        <button>Github</button>
+                        <button>Teste es</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

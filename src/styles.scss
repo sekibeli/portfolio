@@ -1,3 +1,5 @@
+$main-color: #5988FF;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +9,26 @@
 body {
     font-family: 'montserrat', sans-serif;
     background-color: white;
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Baloo 2';
+    font-weight: 700;
+    font-size: 100px;
+    color: $main-color;
+    line-height: 100px;
+}
+
+.contentContainer {
+    display: flex;
+    padding: 150px 100px 150px 100px;
+   
+}
+
+.flyingRight {
+    width: 50%;
+}
+.flyingLeft {
+    width: 50%;
 }

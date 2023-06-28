@@ -1,1 +1,9 @@
-<p>my-skills works!</p>
+<div class="contentContainer">
+  <h2>Meine Kompetenzen</h2>
+  <div class="skillContainer">
+  <div class="skills" *ngFor="let image of skillImages; let i = index">
+    <img class="pics" src="../../assets/img/skills/{{ image }}" alt="" />
+    <div>{{ skillText[i] }}</div>
+  </div>
+  </div>
+</div>
