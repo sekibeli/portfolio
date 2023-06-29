@@ -1,1 +1,37 @@
-<p>contact works!</p>
+<div class="contentContainer">
+  <div class="flyingLeft">
+    <h2>Kontakt</h2>
+  </div>
+  <div class="content">
+  <div class="flyingLeft">
+    <div class="subsection">Was gibt es zu erledigen?</div>
+    <p>
+      Kontaktiere mich über dieses Kontaktformular, ich freue mich von Dir zu
+      hören.
+    </p>
+    <p>Du suchst einen Frontend Entwickler? Melde Dich bei mir!</p>
+  </div>
+  <div class="flyingRight">
+    <div class="inputFields">
+    <form (ngSubmit)="submitForm()">
+      <div class="field">
+        <input class="input" type="text" name="name" placeholder="Name" [(ngModel)]="name" />
+      </div>
+
+      <div class="field"></div>
+      <input class="input" type="email" name="email" placeholder="email" [(ngModel)]="email" />
+
+      <div class="field"></div>
+      <textarea
+        class="inputArea"
+        name="message"
+        placeholder="Nachricht"
+        type="text"
+        [(ngModel)]="message"
+      ></textarea>
+      <button type="submit" class="button">Sag Hallo</button>
+    </form>
+</div>
+  </div>
+  </div>
+</div>

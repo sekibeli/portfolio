@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+name!: string; 
+email!: string;
+message!: string;
 
+
+  submitForm(){
+    
+  }
 }
