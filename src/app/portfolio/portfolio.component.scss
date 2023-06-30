@@ -13,13 +13,13 @@ margin-left: 10px;
 display: flex;
 align-items: center;
 flex-direction: column;
-width: 500px;
+width: 100%;
 justify-content: flex-end;
 
 }
 .flyingLeft {
     margin-right: 10px;
-    width: 500px;
+    width: 100%;
 }
 
 .workContainer{
@@ -27,6 +27,7 @@ justify-content: flex-end;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    width: 100%;
 
     .skill {
         font-size: 1em;
@@ -40,7 +41,7 @@ justify-content: flex-end;
 }
 
 img {
-    width: 500px;
+    width: 100%;
     object-fit: cover;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -49,6 +50,7 @@ img {
 }
 .workBox {
     display: flex;
+    width: 800px;
     gap: 20px;
 }
 

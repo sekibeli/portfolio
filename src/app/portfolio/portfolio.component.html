@@ -7,8 +7,8 @@
  </div>
 <div class="contentContainer">
  
-    <div class="workBox" *ngFor="let work of allWork; let i = index">
-        <div [ngClass]="{'reverse': i%2 === 0}" class="workContainer">
+    <div *ngFor="let work of allWork; let i = index">
+        <div class="workBox" [ngClass]="{'reverse': i%2 === 0}" class="workContainer">
             <div class="flyingLeft">
                 <img src="../../assets/img/work/{{work.img}}.png" alt="">
             </div>
