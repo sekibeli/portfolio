@@ -1,4 +1,4 @@
-<div class="start" id="myWork">
+<div data-aos="zoom-in" class="start" id="myWork">
          <div class="flyingLeft"><h2>Meine Arbeit</h2>
         <p>Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!</p></div>
     <div class="flyingRight">
@@ -10,14 +10,14 @@
     <div *ngFor="let work of allWork; let i = index">
         <div class="workBox" [ngClass]="{'reverse': i%2 != 0}" class="workContainer">
             <div class="flyingLeft">
-                <div>
+                <div data-aos="flip-up">
                 <img src="../../assets/img/work/{{work.img}}.png" alt="">
                 </div>
                 <div class="ellipse ellipse{{i}}"></div>
                 <div class="ellipse ellipse_{{i}}"></div>
             </div>
             <div class="flyingRight">
-                <div>
+                <div data-aos="fade-up">
                     <h3>{{work.title}}</h3>
                     <div class="skill">{{work.dev}}</div>
                     <p>{{work.description}}</p>
