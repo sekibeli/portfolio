@@ -8,7 +8,7 @@
    
   
 .flyingRight {
-    position:relativ;
+     position:relativ;
     width: 50%;
 font-size: 23px;
 margin-left: 10px;
@@ -151,4 +151,8 @@ z-index: -50;
         justify-content:space-around;
     }
     
+}
+
+.right {
+    text-align:end;
 }

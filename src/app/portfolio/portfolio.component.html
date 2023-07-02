@@ -16,7 +16,7 @@
                 <div class="ellipse ellipse{{i}}"></div>
                 <div class="ellipse ellipse_{{i}}"></div>
             </div>
-            <div class="flyingRight">
+            <div class="flyingRight" [ngClass]="{'right': i%2 != 0}">
                 <div data-aos="fade-up">
                     <h3>{{work.title}}</h3>
                     <div class="skill">{{work.dev}}</div>

@@ -24,7 +24,8 @@
 
 .ellipse3 {
     position: absolute;
-    left: -25%;
+    // left: -25%;
+    left: -200px;
     top: -20%;
     height: 800px;
     width: 800px;
@@ -114,5 +115,107 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+}
+
+@media (max-width: 1600px){
+    .head2 {
+        font-size: 5.4em;
+        height: 80px;
+    }
+    .head3 {
+        font-size: 5.2em;
+        height: 100px;
+
+    }
+    .ellipse3 {
+        position: absolute;
+        left: -300px;
+        top: -20%;
+        height: 800px;
+        width: 800px;
+        border-radius: 100%;
+    }
+
+
+    .me1 {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+       
+    
+        .portraitPic {
+            width: 600px;
+            margin: -5px;
+        }
+    }
+}
+
+
+@media (max-width: 1300px){
+    .head2 {
+        font-size: 5.4em;
+    }
+    .head3 {
+        font-size: 5.2em;
+
+    }
+    .ellipse3 {
+        position: absolute;
+        left: -300;
+        top: -10%;
+        height: 600px;
+        width: 600px;
+        border-radius: 100%;
+    }
+
+
+    .me1 {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+       
+    
+        .portraitPic {
+            width: 580px;
+            margin: -5px;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 1150px) {
+
+    .head2 {
+        font-size: 4.4em;
+    }
+    .head3 {
+        font-size: 4.2em;
+
+    }
+    .ellipse3 {
+        position: absolute;
+        left: -300;
+        top: -10%;
+        height: 600px;
+        width: 600px;
+        border-radius: 100%;
+    }
+
+
+    .me1 {
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+       
+    
+        .portraitPic {
+            width: 550px;
+            margin: -5px;
+        }
+    }
 
 }

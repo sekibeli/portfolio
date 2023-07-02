@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 
 @Component({
@@ -10,10 +10,10 @@ import emailjs from '@emailjs/browser';
 export class ContactComponent {
 
   form: FormGroup =  this.fb.group ({
-    from_name: '',
+    from_name: new FormControl('', Validators.required),
     to_name: 'Admin',
-    from_email: '',
-    message: ''
+    from_email: new FormControl('', [Validators.required, Validators.email]),
+    message: new FormControl('', Validators.required),
     
   });
 
@@ -21,6 +21,8 @@ export class ContactComponent {
 
 
   async send() {
+
+    if(this.form.valid){
     emailjs.init('nCGtt3YOLaW_aP1iM');
    let response = await emailjs.send("service_a5mz478", "template_hg9hb6j", {
       from_name: this.form.value.from_name,
@@ -32,6 +34,11 @@ export class ContactComponent {
     alert ('Nachricht wurde versendet!');
     this.form.reset();
   }
+  else {
+    console.log('Angaben fehlen!');
+  }
+}
+
 
 }
 

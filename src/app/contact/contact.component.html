@@ -1,57 +1,121 @@
-<div  class="contentContainer" id="contact">
-  <div data-aos="fade-right"class="flyingLeft">
+<div class="contentContainer" id="contact">
+  <div data-aos="fade-right" class="flyingLeft">
     <h2>Kontakt</h2>
   </div>
   <div class="content">
-    <div data-aos="fade-right"class="flyingLeft">
+    <div data-aos="fade-right" class="flyingLeft">
       <div class="subsection">Was gibt es zu erledigen?</div>
       <p>
         Kontaktiere mich über das Kontaktformular, ich freue mich von Dir zu
         hören.
       </p>
-      <div class="blue space">Du suchst einen Frontend Entwickler? <span class="important">Melde Dich bei mir!</span></div>
+      <div class="blue space">
+        Du suchst einen Frontend Entwickler?
+        <span class="important">Melde Dich bei mir!</span>
+      </div>
     </div>
     <div data-aos="zoom-in" class="flyingRight">
-      <div class="inputFields" >
-        
-        
-        
-        <form action="javascript:void(0)" [formGroup]="form" (submit)="send()" >
+      <div class="inputFields">
+        <form action="javascript:void(0)" [formGroup]="form" (submit)="send()">
           <div class="field">
-            <input
-            formControlName="from_name"
+            <div [ngClass]="{
+            'valid': 
+            form.controls['from_name'].valid &&
+            form.controls['from_name'].touched, 
+            'invalid':  
+            form.controls['from_name'].invalid &&
+            form.controls['from_name'].touched}"></div>
+            <input 
+              formControlName="from_name"
               class="input"
               type="text"
               name="name"
               placeholder="Dein Name"
-              
+            
             />
+            <div
+              class="errorMessage"
+              *ngIf="
+                form.controls['from_name'].invalid &&
+                form.controls['from_name'].touched
+              "
+            >
+              Bitte Namen eingeben.
+            </div>
           </div>
 
-          <div class="field"></div>
+          <div class="field">
+            <div [ngClass]="{
+              'valid': 
+              form.controls['from_email'].valid &&
+              form.controls['from_email'].touched, 
+              'invalid':  
+              form.controls['from_email'].invalid &&
+              form.controls['from_email'].touched}"></div>
+          </div>
+         
           <input
-          formControlName="from_email"
+            formControlName="from_email"
             class="input"
             type="email"
             name="email"
             placeholder="Deine email"
-           
           />
 
-          <div class="field"></div>
+          <div
+            *ngIf="
+              form.controls['from_email'].invalid &&
+              form.controls['from_email'].touched &&
+              form.controls['from_email'].errors
+            "
+          >
+            <div
+              class="errorMessage"
+              *ngIf="form.controls['from_email'].errors['required']"
+            >
+              Bitte email eingeben.
+            </div>
+            <div
+              class="errorMessage"
+              *ngIf="form.controls['from_email'].errors['email']"
+            >
+              Ungültige email
+            </div>
+          </div>
+          <div class="field">
+            <div [ngClass]="{
+              'valid': 
+              form.controls['message'].valid &&
+              form.controls['message'].touched, 
+              'invalid':  
+              form.controls['message'].invalid &&
+              form.controls['message'].touched}"></div>
+          </div>
           <textarea
-          formControlName="message"
+            formControlName="message"
             class="inputArea"
             name="message"
             placeholder="Deine Nachricht"
             type="text"
-            
           ></textarea>
+          <div
+            class="errorMessage"
+            *ngIf="
+              form.controls['message'].invalid &&
+              form.controls['message'].touched
+            "
+          >
+            Bitte eine Nachricht eingeben.
+          </div>
 
-         
-          <button type="submit" class="button">Sag Hallo</button>
+          <button type="submit" [disabled]="!form.valid" class="button">
+            Sag Hallo
+          </button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<!-- <a target="_blank" href="https://icons8.com/icon/70yRC8npwT3d/ok">OK</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+<!-- <a target="_blank" href="https://icons8.com/icon/HZhl4S0tHUuX/hohe-priorit%C3%A4t">Ausrufezeichen</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->

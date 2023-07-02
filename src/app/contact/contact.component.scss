@@ -13,17 +13,27 @@
     display: flex;
 flex-direction: column;
 align-items: center;
+width: 100%
 
 }
 
 .input {
     border: 1px solid var(--main-color);
+    outline: 1px solid transparent;
     background-color: white;
     width: 100%;
    margin-bottom: 30px;
     padding: 10px 10px;
     border-radius: 5px;
    font-family: 'Montserrat';
+   cursor: pointer;
+  transition: box-shadow 0.3 ease;
+
+   &:hover {
+   box-shadow: 0 0 0 1px var(--main-color);
+   
+    
+   }
 }
 
 .flyingRight {
@@ -48,5 +58,43 @@ align-items: center;
 
 textarea {
     font-family: 'Montserrat';
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: 0 0 0 1px var(--main-color);
+    }     
 }
 
+form {
+    width: 80%;
+}
+.errorMessage {
+    color: red;
+    font-size: 0.7em;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.field {
+    position: relative;
+
+
+}
+.valid {
+position: absolute;
+top: 5px;
+right: 5px;
+background-image: url(../../assets/img/ok.svg);
+background-size: contain;
+width: 30px;
+height: 30px;
+}
+
+.invalid {
+    position: absolute;
+top: 5px;
+right: 5px;
+background-size: contain;
+background-image: url(../../assets/img/error.png);
+width: 30px;
+height: 30px;
+}
