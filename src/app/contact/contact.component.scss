@@ -13,7 +13,7 @@
     display: flex;
 flex-direction: column;
 align-items: center;
-width: 100%
+// width: 100%
 
 }
 
@@ -42,7 +42,8 @@ width: 100%
 
 .content {
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    justify-content: space-between;
 
 }
 
@@ -66,7 +67,7 @@ textarea {
 }
 
 form {
-    width: 80%;
+    width: 100%;
 }
 .errorMessage {
     color: red;
@@ -97,4 +98,11 @@ background-size: contain;
 background-image: url(../../assets/img/error.png);
 width: 30px;
 height: 30px;
+}
+
+
+@media (max-width: 700px){
+    .content {
+        flex-direction: column;
+    }
 }

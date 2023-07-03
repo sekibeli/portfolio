@@ -1,8 +1,14 @@
 <div class="headerContainer">
     <img src="../../assets/img/signature3.png" alt="">
-    <div class="headerLinks">
-        <div><a href="#aboutMe">Über mich</a></div>
-       <div><a href="#skills">Kompetenzprofil</a></div> 
-        <div><a href="#myWork">Meine Arbeiten</a></div>
-    </div>
+
+    <li class="burgerMenu" (click)="toggleMenu()">
+        <i class="material-icons"> {{isMenuOpen ? "close" : "menu"}}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+        <a class="menu-item" href="#aboutMe">Über mich</a>
+       <a class="menu-item" href="#skills">Kompetenzprofil</a>
+        <a class="menu-item" href="#myWork">Meine Arbeiten</a>
+       
+    </li>
+   
 </div>

@@ -1,35 +1,118 @@
-
+$menuBreakpoint: 900px;
 
 .headerContainer {
     position: absolute;
-top:0;
-left:0;
-right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: transparent;
     height: 100px;
     display: flex;
-width: 100%;
-padding: 37px 100px;
-justify-content: space-between;
-align-items: center;
+    width: 100%;
+    padding: 37px 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 950px){
+        padding: 37px 20px;
+    }
 
 
-img {
-    height: 60px;
-    width: 190px;
+    img {
+        height: 60px;
+        width: 190px;
+
+
+    }
+
+    a {
+        color: #5988FF;
+        text-decoration: none;
+        // gap: 16px;
+    }
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;  /* Optional - adjust size here */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
   
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
     
-}
+  }
+.burgerMenu {
+    z-index: 100;
+    padding: 0 10px;
+    display: none;
+    cursor: pointer;
 
-a {
-    color: #5988FF;
-    text-decoration: none;
-    gap: 36px;
-}
+    i {
+        color: var(--main-color);
 
-.headerLinks {
-    display: flex;
-    gap: 36px;
-}
+    }
 
+    @media (max-width: 950px){
+        display: block;
+    }
 }
+    .menu {
+       
+        display: flex;
+        gap: 20px;
+
+
+        @media (max-width: 950px) {
+
+            display: none;
+
+            &.is-open {
+                display: block;
+                position: absolute;
+                padding: 50px 30px;
+            
+                top: 0px;
+                right: 0;
+                width: 400px;
+                background: linear-gradient(180deg, #FFF 0%, #EAF0FF 100%);
+                
+
+                .menu-item {
+                    border-bottom: 1px solid whitesmoke;
+                    text-align: left;
+                }
+
+            }
+        }
+
+
+
+        .menu-item {
+            padding: 0 10px;
+            height: 30px;
+            display: block;
+            color: var(--main-color);
+           
+
+            @media (max-width: 950px) {
+                height: 40px;
+
+            }
+        }
+    }
