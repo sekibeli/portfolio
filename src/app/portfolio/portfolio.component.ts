@@ -26,7 +26,7 @@ allWork = [
     buttonGit:'Github',
     gitUrl: 'https://github.com/sekibeli/join',
     buttonShow:'Test it',
-    testUrl: 'https://gruppe-5008.developerakademie.net/index.html'
+    testUrl: 'https://julia-georgiew.developerakademie.net/joinsingle/index.html'
   },
   {
     title:  'La Mama Loca',
@@ -36,7 +36,7 @@ allWork = [
     buttonGit:'Github',
     gitUrl: 'https://github.com/sekibeli/join',
     buttonShow:'Test it',
-    testUrl: 'https://gruppe-5008.developerakademie.net/index.html'
+    testUrl: 'https://julia-georgiew.developerakademie.net/lamamaloca/index.html'
   },
   {
     title:  'Ring of Fire',
@@ -46,7 +46,7 @@ allWork = [
     buttonGit:'Github',
     gitUrl: 'https://github.com/sekibeli/join',
     buttonShow:'Test it',
-    testUrl: 'https://gruppe-5008.developerakademie.net/index.html'
+    testUrl: 'https://jg-ringoffire.web.app/'
   }
 ]
 

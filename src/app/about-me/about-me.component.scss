@@ -2,6 +2,7 @@
     // display: flex;
     // margin: 150px 100px 150px 100px;
     justify-content: space-between;
+    position: relative;
 }
 
 .flyingRight {
@@ -20,6 +21,13 @@ flex-direction: column;
 }
 
 
+.ball6 {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+
 @media (max-width: 1300px){
     .contentContainer {
         flex-direction: column;
@@ -28,6 +36,10 @@ flex-direction: column;
 }
 
 @media ( max-width: 700px){
+    .ball6 {
+       
+        right: 30px;
+    }
 h2 {
     font-size: 40px;
     line-height: 40px;
@@ -50,3 +62,19 @@ h2 {
     
     }
 }
+
+@media (max-width: 500px){
+
+    .ball6 {
+        img { width: 35px;
+            height: 35px;}
+      
+        
+    }
+    .contentContainer {
+        padding:  50px 20px 50px 20px;
+     }
+
+     
+}
+

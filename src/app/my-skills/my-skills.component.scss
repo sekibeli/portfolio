@@ -8,6 +8,7 @@
 
 h2 {
     color: white;
+    text-align: center;
 }
 
 .skillContainer {
@@ -26,5 +27,12 @@ h2 {
         margin: 30px 50px;
         width: 70px;
         height: 70px;
+        transition: transform 2s;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
     }
+
+    
 }

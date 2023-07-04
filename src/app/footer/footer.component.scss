@@ -26,4 +26,17 @@
 }
    
 }
+
+@media (max-width: 1000px){
+
+    .contentContainer {
+        align-items: center;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+}
+
+.footer_mid {
+    text-align: center;
+}
+}
     

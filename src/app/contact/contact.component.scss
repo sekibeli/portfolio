@@ -1,9 +1,20 @@
 .contentContainer {
+    position: relative;
     background: linear-gradient(180deg, #FFF 0%, #EAF0FF 100%);
     flex-direction: column;
 
 }
 
+.goUp {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    cursor: pointer;
+
+    &:hover {
+        filter: invert(1);
+    }
+}
 .subsection {
     font-family: 'baloo 2';
     color: var(--main-color);
@@ -37,7 +48,8 @@ align-items: center;
 }
 
 .flyingRight {
-    justify-content: center;;
+    justify-content: center;
+    width: 50%;
 }
 
 .content {
@@ -104,5 +116,16 @@ height: 30px;
 @media (max-width: 700px){
     .content {
         flex-direction: column;
+    }
+
+    .flyingRight {
+        // justify-content: center;
+        width: 100%;
+    }
+
+    .goUp {
+       
+        bottom: 20px;
+        left: 50px;
     }
 }

@@ -6,86 +6,132 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    // align-items: center;
     padding-top: 100px;
 
-   
-  
-.flyingRight {
-     position:relativ;
-    // width: 50%;
-font-size: 23px;
-margin-left: 10px;
-display: flex;
-align-items: center;
-flex-direction: column;
-width: 100%;
-justify-content: flex-end;
 
-}
-.flyingLeft {
-    position: relative;
-    margin-right: 10px;
-    width: 100%;
- 
-}
 
-.workContainer{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    
-
-    .skill {
-        font-size: 1em;
-        color: var(--main-color);
-    }
-    p {
-        margin-top: 10px;
-        font-size: 0.7em;
+    .flyingRight {
+        position: relative;
+      width: 50%;
+        font-size: 23px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+        justify-content: flex-end;
 
     }
-}
 
-img {
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-}
-.reverse {
-    flex-direction: row-reverse;
-}
-.workBox {
-    display: flex;
-    width: 800px;
-    gap: 20px;
-}
+    .flyingLeft {
+        position: relative;
+        margin-right: 10px;
+        width: 50%;
+       
+
+    }
+
+    .workContainer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        // width: 100%;
+
+
+        .skill {
+            font-size: 1em;
+            color: var(--main-color);
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 0.7em;
+
+        }
+    }
+
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.03) translateY(-5%);
+        }
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .workBox {
+        // display: flex;
+        // width: 800px;
+        // gap: 20px;
+        width: 100%;
+    }
 
 }
 
 .ellipse {
-      background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
-   
+    background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+
 }
 
 .ellipse8 {
-    width: 182px;
-    height: 182px;
-    border-radius: 182px;
+    position: absolute;
+    top: -300px;
+    right: -50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+
+   
+}
+
+
+
+.ellipse0 {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    width: 250px;
+    height: 250px;
+    transform: rotate(81.573deg);
+    border-radius: 250px;
+    z-index: -50;
+
+
+
+}
+
+.ellipse_0 {
+    position: absolute;
+    top: 0px;
+    right: -350px;
+    width: 90px;
+    height: 90px;
+    transform: rotate(81.573deg);
+    border-radius: 90px;
+    z-index: -507;
+
 }
 
 .ellipse1 {
     position: absolute;
-   bottom: -100px;
+    bottom: -100px;
     right: -220px;
     width: 393.32px;
-height: 393.32px;
-transform: rotate(81.573deg);
-border-radius: 393px;
-z-index: -50;
-// flex-shrink: 0;
+    height: 393.32px;
+    transform: rotate(81.573deg);
+    border-radius: 393px;
+    z-index: -50;
+
+
 }
 
 // .ellipse_1 {
@@ -93,88 +139,168 @@ z-index: -50;
 //     top: 0;
 //     right: -120px;
 //     width: 393.32px;
-// height: 393.32px;
-// transform: rotate(81.573deg);
-// border-radius: 393px;
-// z-index: -50;
-// flex-shrink: 0;
+//     height: 393.32px;
+//     transform: rotate(81.573deg);
+//     border-radius: 393px;
+//     z-index: -50;
+//     flex-shrink: 0;
+
+
 // }
-
-.ellipse0 {
-    position: absolute;
-    top: 100px;
-    left: -100px;
-    width: 250px;
-height: 250px;
-transform: rotate(81.573deg);
-border-radius: 250px;
-z-index: -50;
-// flex-shrink: 0;
-}
-
-.ellipse_0 {
-    position: absolute;
-    top: -350px;
-    right: -100px;
-    width: 90px;
-height: 90px;
-transform: rotate(81.573deg);
-border-radius: 90px;
-z-index: -50;
-// flex-shrink: 0;
-}
 
 .ellipse2 {
     position: absolute;
-   bottom: -100px;
-    left: 0px;
-    width: 50px;
-height: 50px;
-transform: rotate(81.573deg);
-border-radius: 50px;
-flex-shrink: 0;
-z-index: -50;
-}
-.ellipse_2 {
-    position: absolute;
-   top: -100px;
-    left: 20px;
-    width: 50px;
-height: 50px;
-transform: rotate(81.573deg);
-border-radius: 50px;
-flex-shrink: 0;
-z-index: -50;
-}
-.start {
-    padding: 100px 100px 0px 100px;
-    display: flex;
-    justify-content: center;
-    .flyingRight {
-        display: flex;
-        justify-content:space-around;
-    }
-    
-}
-
-.right {
-    text-align:end;
-}
-
-@media (max-width: 900px){
-    .ellipse0 {
-        position: absolute;
-        top: 100px;
-        left: -100px;
-        width: 150px;
+    bottom: -40px;
+    left: 200px;
+    width: 150px;
     height: 150px;
     transform: rotate(81.573deg);
     border-radius: 150px;
-    z-index: -50;
     // flex-shrink: 0;
+    z-index: -50;
+
+
+}
+
+.ellipse_2 {
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(81.573deg);
+    border-radius: 50px;
+    flex-shrink: 0;
+    z-index: -50;
+
+
+}
+
+// .start {
+//     padding: 100px 100px 0px 100px;
+//     display: flex;
+//     justify-content: center;
+
+//     .flyingRight {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+
+// }
+
+.right {
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1600px) {
+    .ellipse8 {
+        top: -300px;
+        right: 160px;
     }
+    .ellipse_0 { top: -60px;
+        right: -350px;}
+}
+
+@media (max-width: 1300px) {
+    .ellipse8 {
+        top: -300px;
+        right: 160px;
+    }
+
+    .ellipse_0 { 
+        top: -60px;
+        right: -350px;}
+
+
+
+       
+}
+
+@media (max-width: 1100px) {
+
+
+
+    .ellipse_0 { 
+        top: -200px;
+        right: -150px;
+        width: 70px;
+        height: 70px;}
+}
+
+@media (min-width: 900px) and (max-width: 1150px){
+    .flyingRight {
+        width: 50%;
+        
+    }
+    .flyingLeft {
+        width: 50%;
+    }
+   
+    .button {
+        width: 150px;
+    }
+
+    .workContainer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+
+
+        .skill {
+            font-size: 0.9em !important;
+            color: var(--main-color);
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 0.5em !important;
+
+        }
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .workContainer {
+         gap: 60px !important;
+    }
+    .center {
+        text-align: center;
+    }
+    .button {
+        width: 130px;
+    }
+    .flyingLeft {
+        width: 100% !important;
+    }
+    .flyingRight {
+        width: 100% !important;
+    }
+    .ellipse8 {
+        top: -300px;
+        right: 160px;
+    }
+    .ellipse_0 { 
+        top: -80px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+}
+
     .workContainer {
         flex-direction: column;
+
+
     }
 
     .reverse {
@@ -184,26 +310,56 @@ z-index: -50;
     .contentContainer {
         flex-direction: column;
     }
-    .start {
-        padding: 100px 40px 0px 40px;
-        display: flex;
-        justify-content: center;
-        .flyingRight {
-            display: flex;
-            justify-content:space-around;
-        }
-        
-    }
-    .ellipse2 {
-        position: absolute;
-       bottom: -330px;
-        left: 200px;
-        width: 50px;
-    height: 50px;
-    transform: rotate(81.573deg);
-    border-radius: 50px;
-    flex-shrink: 0;
-    z-index: -50;
-    }
 
+    // .start {
+    //     padding: 100px 40px 0px 40px;
+    //     display: flex;
+    //     justify-content: center;
+
+    //     .flyingRight {
+    //         display: flex;
+    //         justify-content: space-around;
+    //     }
+
+    // }
+}
+
+@media (max-width: 500px) {
+
+   
+.flyingLeft {
+    align-items: center;
+    justify-content: center;
+}
+.flyingRight {
+    align-items: center;
+    justify-content: center;
+}
+
+    .contentContainer {
+       padding:  50px 20px 50px 20px;
+    }
+    .ellipse8 {
+        top: -260px;
+        right: 70px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+    .ellipse_0 { 
+        top: -50px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+}
+}
+
+@media (max-width: 350px) {
+    .ellipse8 {
+        top: -360px;
+        right: 70px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
 }
