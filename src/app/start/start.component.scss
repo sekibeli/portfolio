@@ -17,8 +17,10 @@
 .startRight {
     position: relative;
     width: 50vw;
-    padding-top: 130px;
-
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ellipse3 {
@@ -227,9 +229,9 @@
 
 @media (min-width: 750px) and (max-width: 1000px) {
 
-    .startRight {
-        margin-top: 150px;
-    }
+    // .startRight {
+    //     margin-top: 150px;
+    // }
 
     .head2 {
         font-size: 3.2em;
@@ -352,7 +354,7 @@
 
     }
     .portraitPic {
-        width: 580px;
+        width: 500px;
         background-position: bottom;
         // margin: -5px;
     }
@@ -422,7 +424,8 @@
     .startRight {
         position: relative;
         width: 100vw;
-        padding-top: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     
     }
     
@@ -506,5 +509,6 @@
         width: 300px;
        
     }
-    
+
+   
 }
