@@ -1,5 +1,6 @@
 <div class="headerContainer">
-    <img src="../../assets/img/signature3.png" alt="">
+    <img *ngIf="!bluePic" routerLink="/" src="../../assets/img/signature3.png" alt="">
+    <img *ngIf="bluePic" routerLink="/" src="../../assets/img/signature-bentron_blue.png" alt="">
 
     <li class="burgerMenu" (click)="toggleMenu()">
         <i class="material-icons"> {{isMenuOpen ? "close" : "menu"}}</i>

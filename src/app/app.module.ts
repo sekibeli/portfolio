@@ -11,6 +11,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { HomeComponent } from './home/home.component';
 // import { FormBuilder, FormGroup } from '@angular/forms';
 
 
@@ -24,7 +26,9 @@ import { FooterComponent } from './footer/footer.component';
     MySkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ImpressumComponent,
+    HomeComponent
    
   ],
   imports: [
