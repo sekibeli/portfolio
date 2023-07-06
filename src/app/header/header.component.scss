@@ -117,9 +117,16 @@ $menuBreakpoint: 900px;
         .menu-item {
             padding: 0 15px;
             height: 30px;
-            display: block;
+            // display: block;
+            display: inline-block;
             color: var(--main-color);
            
+            &:hover {
+                text-shadow:  1px 0 0 var(--main-color);
+                
+
+            }
+            
 
             @media (max-width: 950px) {
                 height: 40px;
@@ -127,3 +134,5 @@ $menuBreakpoint: 900px;
             }
         }
     }
+
+    

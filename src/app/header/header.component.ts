@@ -16,5 +16,6 @@ toggleMenu(): void {
 
 ngOnInit(): void {}
  
+// goToSection(fragment:any){}
 
 }

@@ -19,7 +19,16 @@ body {
     background-color: white;
     overflow-x: hidden;
 }
-
+h1 {
+    margin-top: 20px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 3em;
+    color:var(--main-color);
+    line-height: 100px;
+    margin-bottom: 70px;
+    
+}
 h2 {
     margin-top: 20px;
     font-family: 'Baloo 2';
@@ -44,12 +53,7 @@ h3 {
    
 }
 
-.flyingRight {
-    // width: 50%;
-}
-.flyingLeft {
-    // width: 50%;
-}
+
 
 .button {
     margin-right: 10px;
