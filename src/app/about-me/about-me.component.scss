@@ -5,6 +5,17 @@
     position: relative;
 }
 
+.ellipse5 {
+    position: absolute;
+   top: -100px;
+    left: 45%;
+    width: 206px;
+    height: 206px;
+    flex-shrink: 0;
+    border-radius: 206px;
+    background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+}
+
 .flyingRight {
     // width: 50%;
 font-size: 18px;
@@ -36,6 +47,17 @@ flex-direction: column;
 }
 
 @media ( max-width: 700px){
+    .ellipse5 {
+        position: absolute;
+       top: -60px;
+        left: 55%;
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+        border-radius: 120px;
+        background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+    }
+
     .ball6 {
        
         right: 30px;
