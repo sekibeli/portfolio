@@ -1,15 +1,19 @@
 <div class="headerContainer">
     <img *ngIf="!bluePic" routerLink="/" src="../../assets/img/signature3.png" alt="">
     <img *ngIf="bluePic" routerLink="/" src="../../assets/img/signature-bentron_blue.png" alt="">
-
+    <div class="rightMenu">
     <li class="burgerMenu" (click)="toggleMenu()">
         <i class="material-icons"> {{isMenuOpen ? "close" : "menu"}}</i>
     </li>
+   
     <li class="menu" [class.is-open]="isMenuOpen">
         <a class="menu-item" href="#aboutMe">Über mich</a>
        <a class="menu-item" href="#skills">Kompetenzprofil</a>
         <a class="menu-item" href="#myWork">Meine Arbeiten</a>
-       
     </li>
-   
+    <li class="language">
+        <a (click)="translate.use('de')">DE</a>|
+        <a (click)="switchLanguage('en')">EN</a>
+    </li>
+</div>
 </div>

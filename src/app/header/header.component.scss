@@ -35,9 +35,24 @@ $menuBreakpoint: 900px;
     }
 }
 
+.rightMenu {
+   display: flex;
+}
+
+li {
+    list-style-type:none;
+
+    
+}
+
+.language a {
+    cursor:pointer;
+}
 .light {
     color: black;
 }
+
+
 .material-icons {
     z-index: 100;
     font-family: 'Material Icons';

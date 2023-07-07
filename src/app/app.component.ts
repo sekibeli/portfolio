@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,12 @@ export class AppComponent {
   title = 'portfolio';
   
 
-  constructor(public router: Router){};
+  constructor(public router: Router, public translate: TranslateService){
+    
+
+    // the lang to use, if the lang isn't available, it will use the current loader to get them
+   
+  };
 
   
 }
