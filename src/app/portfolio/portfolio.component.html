@@ -24,10 +24,10 @@
                 <div data-aos="fade-up">
                     <h3>{{work.title}}</h3>
                     <div class="skill">{{work.dev}}</div>
-                    <p>{{work.description}}</p>
+                    <p>{{work.description | translate}}</p>
                     <div>
                         <button class="button">Github</button>
-                        <a href="{{work.testUrl}}" target="blank" > <button class="button">Teste es</button></a>
+                        <a href="{{work.testUrl}}" target="blank" > <button class="button">{{"Teste es" | translate }}</button></a>
                     </div>
                 </div>
                

@@ -1,10 +1,28 @@
 {
-     "Hallo! Ich bin Julia": "Hallo! Ich bin Julia",
+    "Über mich": "Über mich",
+    "Kompetenzprofil": "Kompetenzprofil" ,
+    "Meine Arbeiten": "Meine Arbeiten",
+    "Hallo! Ich bin Julia": "Hallo! Ich bin Julia",
      "Gemeinsame ans Ziel": "Gemeinsam ans Ziel",
      "Meine berufliche Reise ist ebenso einzigartig wie erfüllend. Ich startete als leidenschaftliche, professionelle Balletttänzerin, was mir ein Auge für Ästhetik und Präzision schenkte. Diese künstlerische Grundlage nutzte ich als Sprungbrett in die digitale Welt, als ich 1998 einen der ersten Onlineshops gründete, der mein Hobby und meinen Beruf nahtlos miteinander verband. Die rasanten Entwicklungen im digitalen Bereich haben mich inspiriert, meine Fähigkeiten zu erweitern, und so entschied ich mich für eine Weiterbildung zur Frontendentwicklerin. Mit diesem neuen Wissen kann ich die technischen Aspekte meines Onlinegeschäfts selbst handhaben und bin nun bereit, als Junior Frontendentwicklerin neue, spannende Projekte zu gestalten. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten und Ihre Ideen zum Leben zu erwecken. Willkommen in meiner Welt!": "Meine berufliche Reise ist ebenso einzigartig wie erfüllend. Ich startete als leidenschaftliche, professionelle Balletttänzerin, was mir ein Auge für Ästhetik und Präzision schenkte. Diese künstlerische Grundlage nutzte ich als Sprungbrett in die digitale Welt, als ich 1998 einen der ersten Onlineshops gründete, der mein Hobby und meinen Beruf nahtlos miteinander verband. Die rasanten Entwicklungen im digitalen Bereich haben mich inspiriert, meine Fähigkeiten zu erweitern, und so entschied ich mich für eine Weiterbildung zur Frontendentwicklerin. Mit diesem neuen Wissen kann ich die technischen Aspekte meines Onlinegeschäfts selbst handhaben und bin nun bereit, als Junior Frontendentwicklerin neue, spannende Projekte zu gestalten. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten und Ihre Ideen zum Leben zu erwecken. Willkommen in meiner Welt!",
-    "Nachricht senden": "Nachricht senden",
-    "Meine Kompetenzen": "Meine Kompetenzen",
-    "Meine Arbeit": "Meine Arbeit",
-    "Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!":  "Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!"
+     "Nachricht senden": "Nachricht senden",
+     "Meine Kompetenzen": "Meine Kompetenzen",
+     "Meine Arbeit": "Meine Arbeit",
+     "Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!":  "Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!",
+     "Join Beschreibung": "Hierbei handelt es sich um einen Taskmanager, der auf dem Prinzip des Kanban-Systems aufbaut. Du hast die Möglichkeit, deine Aufgaben ganz einfach mittels Drag-and-Drop zu organisieren, zu erstellen, zu bearbeiten und zu löschen. Zudem kannst du individuelle Kategorien einrichten und jeder Aufgabe gezielt Mitarbeiter zuweisen.",
+    "Teste es": "Teste es",
+    "Ma Mama Loca Beschreibung": "Ein klassisches Lauf-, spring- und wirf-Spiel, mit objekt-orientiertem Ansatz. Mama ist verrückt und legt sich mit Spinnen und Moskitos an. Hilf ihr den Endboss zu besiegen!",
+    "Ring of Fire Beschreibung": "Völlig sinnloses Trink-Kartenspiel, aber sehr hilfreich, um einige Grundprinzipien von Angular und Firebase zu erlernen. Im Multiplayer-Style darf sich jeder betrinken.",
+    "Kontakt": "Kontakt",
+"Was gibt es zu erledigen?": "Was gibt es zu erledigen?",
+"Kontaktiere mich über das Kontaktformular, ich freue mich von Dir zu hören.": "Kontaktiere mich über das Kontaktformular, ich freue mich von Dir zu hören.",
+"Sag Hallo": "Sag Hallo",
+"Du suchst einen Frontend Entwickler?": "Du suchst einen Frontend Entwickler?",
+"Melde Dich bei mir!": "Melde Dich bei mir!",
+"Bitte Namen eingeben": "Bitte Namen eingeben",
+"Bitte email eingeben": "Bitte email eingeben",
+"Bitte eine Nachricht eingeben.": "Bitte eine Nachricht eingeben.",
+"Ungültige email": "Ungültige email",
+"Impressum": "Impressum"
 
-    }
+}

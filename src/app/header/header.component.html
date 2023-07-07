@@ -7,13 +7,13 @@
     </li>
    
     <li class="menu" [class.is-open]="isMenuOpen">
-        <a class="menu-item" href="#aboutMe">Über mich</a>
-       <a class="menu-item" href="#skills">Kompetenzprofil</a>
-        <a class="menu-item" href="#myWork">Meine Arbeiten</a>
+        <a class="menu-item" href="#aboutMe">{{"Über mich" | translate }}</a>
+       <a class="menu-item" href="#skills">{{"Kompetenzprofil" | translate}}</a>
+        <a class="menu-item" href="#myWork">{{"Meine Arbeiten" | translate }}</a>
     </li>
     <li class="language">
         <a (click)="translate.use('de')">DE</a>|
-        <a (click)="switchLanguage('en')">EN</a>
+        <a (click)="translate.use('en')">EN</a>
     </li>
 </div>
 </div>

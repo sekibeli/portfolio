@@ -1,18 +1,17 @@
 <div class="contentContainer" id="contact">
   <div data-aos="fade-right" class="flyingLeft">
-    <h2>Kontakt</h2>
+    <h2>{{"Kontakt" | translate }}</h2>
   </div>
   <div class="content">
     <div class="goUp" routerLink="/" (click)="scrollToTop()"><img src="../../assets/img/go_up.svg" alt=""></div>
     <div data-aos="fade-right" class="flyingLeft">
-      <div class="subsection">Was gibt es zu erledigen?</div>
+      <div class="subsection">{{"Was gibt es zu erledigen?" | translate }}</div>
       <p>
-        Kontaktiere mich über das Kontaktformular, ich freue mich von Dir zu
-        hören.
+        {{"Kontaktiere mich über das Kontaktformular, ich freue mich von Dir zu hören." | translate }}
       </p>
       <div class="blue space">
-        Du suchst einen Frontend Entwickler?
-        <span class="important">Melde Dich bei mir!</span>
+        {{"Du suchst einen Frontend Entwickler?" | translate }}
+        <span class="important">{{"Melde Dich bei mir!" | translate }}</span>
       </div>
       
     </div>
@@ -32,7 +31,7 @@
               class="input"
               type="text"
               name="name"
-              placeholder="Dein Name"
+              placeholder="Name"
             
             />
             <div
@@ -42,7 +41,7 @@
                 form.controls['from_name'].touched
               "
             >
-              Bitte Namen eingeben.
+              {{"Bitte Namen eingeben." | translate }}
             </div>
           </div>
 
@@ -61,7 +60,7 @@
             class="input"
             type="email"
             name="email"
-            placeholder="Deine email"
+            placeholder="E-mail"
           />
 
           <div
@@ -75,13 +74,13 @@
               class="errorMessage"
               *ngIf="form.controls['from_email'].errors['required']"
             >
-              Bitte email eingeben.
+              {{"Bitte email eingeben." | translate }}
             </div>
             <div
               class="errorMessage"
               *ngIf="form.controls['from_email'].errors['email']"
             >
-              Ungültige email
+              {{"Ungültige email" | translate }}
             </div>
           </div>
           <div class="field">
@@ -97,7 +96,7 @@
             formControlName="message"
             class="inputArea"
             name="message"
-            placeholder="Deine Nachricht"
+            placeholder="Message"
             type="text"
           ></textarea>
           <div
@@ -107,11 +106,11 @@
               form.controls['message'].touched
             "
           >
-            Bitte eine Nachricht eingeben.
+            {{"Bitte eine Nachricht eingeben." | translate }}
           </div>
 
           <button type="submit" [disabled]="!form.valid" class="button">
-            Sag Hallo
+            {{"Sag Hallo" | translate }}
           </button>
         </form>
       </div>
