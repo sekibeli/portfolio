@@ -10,9 +10,9 @@
   
    }
    
-.ellipseWrapper {
-    // position: relative;
-}
+// .ellipseWrapper {
+//     // position: relative;
+// }
 .startLeft {
     // display: flex;
     position: relative;
@@ -447,7 +447,7 @@
 
 }
 
-@media screen and (max-height: 650px){
+@media screen and (max-height: 550px){
     .scroll {
         display: none;
     }
