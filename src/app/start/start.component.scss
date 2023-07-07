@@ -6,9 +6,13 @@
     color: #5988FF;
     padding: 0 100px;
    margin-top: 10vh;
+   overflow: hidden;
   
    }
-
+   
+.ellipseWrapper {
+    // position: relative;
+}
 .startLeft {
     // display: flex;
     position: relative;
@@ -441,6 +445,20 @@
     
     }
 
+}
+
+@media screen and (max-height: 650px){
+    .scroll {
+        display: none;
+    }
+
+    .ellipse3 {
+        top: -50px;
+        left: -50px;
+        width:400px;
+        height:350px;
+        border-radius: 100%;
+    }
 }
 
 
