@@ -1,15 +1,15 @@
 .bgContainer {
     display: flex;
-  
+
     background: linear-gradient(180deg, #FFF 0%, #EAF0FF 100%);
     height: 90vh;
     color: #5988FF;
     padding: 0 100px;
-   margin-top: 10vh;
-   overflow: hidden;
-  
-   }
-   
+    margin-top: 10vh;
+    overflow: hidden;
+
+}
+
 // .ellipseWrapper {
 //     // position: relative;
 // }
@@ -23,8 +23,8 @@
 .startRight {
     position: relative;
     width: 50vw;
-  margin-top: 15vh;
-  padding-left: 7vw;
+    margin-top: 15vh;
+    // padding-left: 7vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,7 +61,7 @@
 
 
 .head1 {
-   
+
     font-size: 2.5em;
 }
 
@@ -70,22 +70,22 @@
     font-size: 5em;
     line-height: 0.8em;
     font-weight: 700;
-  
+
 }
 
 .head3 {
     font-family: 'Baloo 2';
-   font-size: 5em;
+    font-size: 5em;
     font-weight: 700;
     line-height: 0.8em;
-    
+
 }
 
 
 .portraitPic {
     height: 100%;
-    
-   }
+
+}
 
 
 .lineDown {
@@ -108,18 +108,20 @@
     }
 
 }
+
 .contactButtons {
     position: absolute;
     bottom: 50px;
-    right: 40px;
+    right: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 50;
 
 }
 
-@media (max-width: 1600px){
-    
+@media (max-width: 1600px) {
+
     .ellipse3 {
         position: absolute;
         left: -150px;
@@ -130,38 +132,38 @@
     }
 
 
-   
+
 }
 
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
     .head1 {
-   
+
         font-size: 2.0em;
     }
-    
+
     .head2 {
         font-family: 'Baloo 2';
         font-size: 4em;
         line-height: 0.8em;
         font-weight: 700;
-      
+
     }
-    
+
     .head3 {
         font-family: 'Baloo 2';
-       font-size: 4em;
+        font-size: 4em;
         font-weight: 700;
         line-height: 0.8em;
-        
+
     }
 
 
     .bgContainer {
         padding: 0 50px;
     }
-    
-      .ellipse3 {
+
+    .ellipse3 {
         position: absolute;
         left: -150px;
         top: -10%;
@@ -170,13 +172,13 @@
         border-radius: 100%;
     }
 
-    
+
 }
 
 
 // @media (max-width: 1150px) and (min-height: 1000px){
-   
-   
+
+
 //     .bgContainer {
 //         padding: 0 5px;
 //     }
@@ -187,7 +189,7 @@
 // .startLeft {
 //     padding: 0 0 0 0;
 // }
-   
+
 //     .ellipse3 {
 //         position: absolute;
 //         left: -100px;
@@ -198,14 +200,14 @@
 //     }
 //     .portraitPic {
 //         // width: 250px;
-        
+
 //     }
 
 //     .scroll {
 //         display: none;
 //     }
 
-    
+
 
 // }
 
@@ -228,7 +230,7 @@
 // .bgContainer {
 //     padding: 0 0 0 0;
 // }
-   
+
 //     .ellipse3 {
 //         position: absolute;
 //         left: -150px;
@@ -240,9 +242,9 @@
 
 //     .portraitPic {
 //         // width: 550px;
-       
+
 //     }
-   
+
 
 // }
 
@@ -251,7 +253,15 @@
 //         // margin-top: 0;
 //     }
 // }
-@media (max-width: 1200px) and (min-height: 1100px){
+
+
+
+@media (max-width: 1200px) and (min-height: 1100px) {
+
+    .contactButtons {
+        right: 50px;
+    }
+
     .scroll {
         right: 3%;
     }
@@ -262,152 +272,161 @@
 }
 
 @media (max-width: 950px) {
+    .bgContainer {
+        padding: 0 20px;
+            } 
+
     .head1 {
-       font-size: 1.5em;
+        font-size: 1.5em;
     }
-    
+
     .head2 {
         font-family: 'Baloo 2';
         font-size: 3em;
         line-height: 0.8em;
         font-weight: 700;
-      
+
     }
-    
+
     .head3 {
         font-family: 'Baloo 2';
-       font-size: 3em;
+        font-size: 3em;
         font-weight: 700;
         line-height: 0.8em;
-        
+
     }
 
     .scroll {
-        right:10%;
+        right: 25%;
     }
-.startRight {
-    padding-left: 50px; 
+
+    .startRight {
+        padding-left: 90px;
+    }
+
+
 }
-   
-
-}
 
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
     .bgContainer {
-       justify-content: space-between;
-      flex-direction: column-reverse;
+        justify-content: space-between;
+        flex-direction: column-reverse;
         background: linear-gradient(180deg, #FFF 0%, #EAF0FF 100%);
         // height: 90vh;
         color: #5988FF;
-        padding: 0 ;
+        padding: 0;
         margin-top: 10vh;
-        
-       
-    
-    
-    
+
+
+
+
+
     }
-    
-    .startLeft {  // IMG
+
+    .startLeft {
+        // IMG
         justify-content: center;
         position: relative;
-         width: 100vw;
-         height: 70vh;
+        width: 100vw;
+        height: 70vh;
         //  background-color: #5988FF;
-     
-       
-    
+
+
+
     }
-    
-    .startRight { //TXT
+
+    .startRight {
+        //TXT
         justify-content: center;
         margin-top: 0;
         width: 100vw;
         height: 20vh;
         padding-left: 30px;
         color: white;
-          
-    
+
+
     }
-    
+
     .ellipse3 {
         position: absolute;
-        
+
         left: -170px;
         top: 0;
         height: 700px;
         width: 700px;
         border-radius: 100%;
         // background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
-    
+
     }
-       
+
     .passion {
         font-family: 'Baloo 2', 'sans-serif';
         color: #5988FF;
         font-size: 128px;
     }
-    
-    
+
+
     .head1 {
-              
+
         font-size: 1.7em;
-                font-weight: 300;
+        font-weight: 300;
     }
-    
+
     .head2 {
         line-height: 0.8em;
         font-size: 3.4em;
-        
+
     }
+
     .head3 {
         line-height: 0.8em;
         font-size: 3.2em;
-     
+
 
     }
-   
-    
-    
-    
+
+
+
+
     .lineDown {
         width: 2px;
         background-color: #5988FF;
         height: 35vh;
-    
+
     }
-    
+
     .scroll {
         display: none;
-    
+
     }
+
     .contactButtons {
-       display: none;
-    
+        display: none;
+
     }
 
 }
 
 
 
-@media (max-width: 600px){
- 
-   
-    
+@media (max-width: 600px) {
+
+
+
     .ellipse3 {
         // position: absolute;
-        
+
         left: -170px;
         top: 0;
         height: 530px;
         width: 510px;
         border-radius: 100%;
         // background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
-    
+
     }
-    
+
     .ellipse5 {
         position: absolute;
         bottom: -180px;
@@ -418,36 +437,37 @@
         border-radius: 206px;
         background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
     }
-    
+
     .passion {
         font-family: 'Baloo 2', 'sans-serif';
         color: #5988FF;
         font-size: 128px;
     }
-    
-    
-     
-       
-    
+
+
+
+
+
     .lineDown {
         width: 2px;
         background-color: #5988FF;
         height: 35vh;
-    
+
     }
-    
+
     .scroll {
         display: none;
-    
+
     }
+
     .contactButtons {
-       display: none;
-    
+        display: none;
+
     }
 
 }
 
-@media screen and (max-height: 550px){
+@media screen and (max-height: 550px) {
     .scroll {
         display: none;
     }
@@ -455,10 +475,8 @@
     .ellipse3 {
         top: -50px;
         left: -50px;
-        width:400px;
-        height:350px;
+        width: 400px;
+        height: 350px;
         border-radius: 100%;
     }
 }
-
-

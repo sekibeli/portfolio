@@ -35,12 +35,20 @@ flex-direction: column;
 .ball6 {
     position: absolute;
     top: 50px;
-    right: 100px;
+    right: 140px;
 }
 
 
 @media (max-width: 1300px){
+.ball6 {
+    top: 30px;
+     img {
+        width: 50px;
+     }
+}
+
     .contentContainer {
+        
         flex-direction: column;
         align-items: center;
     }
@@ -83,6 +91,12 @@ h2 {
     
     
     }
+}
+
+@media (max-width: 950px){
+    // .bgContainer {
+    // padding: 100px 20px;
+    // }
 }
 
 @media (max-width: 500px){
