@@ -20,7 +20,7 @@ work:any = {
 allWork = [
   {
     title:  'Join',
-    dev: 'Angular | Typescript | Javascript | HTML | SCSS',
+    dev: 'Javascript | HTML | SCSS',
     description: 'Join Beschreibung',
     img: 'join',
     buttonGit:'Github',
@@ -34,7 +34,7 @@ allWork = [
     description: 'La Mama Loca Beschreibung',
     img: 'lamamaloca',
     buttonGit:'Github',
-    gitUrl: 'https://github.com/sekibeli/join',
+    gitUrl: 'https://github.com/sekibeli/LaMamaLoca',
     buttonShow:'Test it',
     testUrl: 'https://julia-georgiew.developerakademie.net/lamamaloca/index.html'
   },
@@ -44,7 +44,7 @@ allWork = [
     description: 'Ring of Fire Beschreibung',
     img: 'ring',
     buttonGit:'Github',
-    gitUrl: 'https://github.com/sekibeli/join',
+    gitUrl: 'https://github.com/sekibeli/ringoffire',
     buttonShow:'Test it',
     testUrl: 'https://jg-ringoffire.web.app/'
   }
