@@ -20,7 +20,7 @@ work:any = {
 allWork = [
   {
     title:  'Join',
-    dev: 'Javascript | HTML | SCSS',
+    dev: 'Javascript | HTML | CSS',
     description: 'Join Beschreibung',
     img: 'join',
     buttonGit:'Github',
