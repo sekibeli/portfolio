@@ -10,34 +10,31 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-    
 }
+
 body {
- 
     font-family: 'montserrat', sans-serif;
     background-color: white;
     overflow-x: hidden;
 }
+
 h1 {
     margin-top: 20px;
     font-family: 'montserrat';
     font-weight: 700;
     font-size: 3em;
-    color:var(--main-color);
-    // line-height: 100px;
+    color: var(--main-color);
     margin-bottom: 70px;
-    
 }
+
 h2 {
     margin-top: 20px;
     font-family: 'Baloo 2';
     font-weight: 700;
     font-size: 100px;
-    color:var(--main-color);
+    color: var(--main-color);
     line-height: 100px;
     margin-bottom: 20px;
-    
 }
 
 h3 {
@@ -50,29 +47,24 @@ h3 {
     display: flex;
     padding: 150px 100px 150px 100px;
     gap: 20px;
-   
 }
-
-
 
 .button {
     margin-right: 10px;
     padding: 10px 20px;
     color: #5988FF;
-    border:1px solid #5988FF;
+    border: 1px solid #5988FF;
     border-radius: 5px;
     background-color: white;
     margin-top: 20px;
     width: 200px;
     font-size: 0.8em;
-    transition:  1s;
+    transition: 1s;
 
     &:hover {
         color: white;
-        background-image: linear-gradient( 135deg, #5988FF 51.56%, #0043F0 100%);
+        background-image: linear-gradient(135deg, #5988FF 51.56%, #0043F0 100%);
         cursor: pointer;
-        
-      
     }
 }
 
@@ -88,28 +80,26 @@ h3 {
     margin-top: 50px;
 }
 
-
 @media (max-width: 1300px) {
     .contentContainer {
         padding: 100px 50px 100px 50px;
-       
     }
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
     .contentContainer {
         padding: 80px 20px;
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
     h2 {
         font-size: 80px;
         text-align: center;
     }
 }
 
-@media ( max-width: 700px){
+@media (max-width: 700px) {
     h2 {
         font-size: 40px;
         line-height: 40px;
