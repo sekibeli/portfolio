@@ -6,27 +6,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
-      padding-top: 100px;
-
-
+    padding-top: 100px;
 
     .flyingRight {
         position: relative;
-      width: 50%;
+        width: 50%;
         font-size: 23px;
-             display: flex;
+        display: flex;
         align-items: center;
         flex-direction: column;
-               justify-content: flex-end;
-
+        justify-content: flex-end;
     }
 
     .flyingLeft {
         position: relative;
         margin-right: 10px;
         width: 50%;
-       
-
     }
 
     .workContainer {
@@ -34,8 +29,6 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
-        // width: 100%;
-
 
         .skill {
             font-size: 1em;
@@ -49,15 +42,15 @@
         }
     }
 
-
     img {
         width: 100%;
         object-fit: cover;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease;
 
         &:hover {
             transform: scale(1.03) translateY(-5%);
+            cursor: pointer;
         }
     }
 
@@ -66,17 +59,11 @@
     }
 
     .workBox {
-        // display: flex;
-        // width: 800px;
-        // gap: 20px;
         width: 100%;
     }
 
 }
 
-.pointer {
-    cursor: pointer;
-}
 .ellipse {
     background: radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
 
@@ -89,11 +76,7 @@
     width: 60px;
     height: 60px;
     border-radius: 80px;
-
-   
 }
-
-
 
 .ellipse0 {
     position: absolute;
@@ -104,9 +87,6 @@
     transform: rotate(81.573deg);
     border-radius: 250px;
     z-index: -50;
-
-
-
 }
 
 .ellipse_0 {
@@ -118,7 +98,6 @@
     transform: rotate(81.573deg);
     border-radius: 90px;
     z-index: -507;
-
 }
 
 .ellipse1 {
@@ -130,23 +109,7 @@
     transform: rotate(81.573deg);
     border-radius: 393px;
     z-index: -50;
-
-
 }
-
-// .ellipse_1 {
-//     position: absolute;
-//     top: 0;
-//     right: -120px;
-//     width: 393.32px;
-//     height: 393.32px;
-//     transform: rotate(81.573deg);
-//     border-radius: 393px;
-//     z-index: -50;
-//     flex-shrink: 0;
-
-
-// }
 
 .ellipse2 {
     position: absolute;
@@ -156,10 +119,7 @@
     height: 150px;
     transform: rotate(81.573deg);
     border-radius: 150px;
-    // flex-shrink: 0;
     z-index: -50;
-
-
 }
 
 .ellipse_2 {
@@ -172,40 +132,22 @@
     border-radius: 50px;
     flex-shrink: 0;
     z-index: -50;
-
-
 }
-
-// .start {
-//     padding: 100px 100px 0px 100px;
-//     display: flex;
-//     justify-content: center;
-
-//     .flyingRight {
-//         display: flex;
-//         justify-content: space-around;
-//     }
-
-// }
 
 .right {
     text-align: end;
 }
-
-
-
-
-
-
-
 
 @media (max-width: 1600px) {
     .ellipse8 {
         top: -300px;
         right: 160px;
     }
-    .ellipse_0 { top: -60px;
-        right: -350px;}
+
+    .ellipse_0 {
+        top: -60px;
+        right: -350px;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -214,18 +156,14 @@
         right: 160px;
     }
 
-    .ellipse_0 { 
+    .ellipse_0 {
         top: -60px;
-        right: -350px;}
-
-
-
-       
+        right: -350px;
+    }
 }
 
 @media (max-width: 1100px) {
-
-    .ellipse_0 { 
+    .ellipse_0 {
         top: -200px;
         right: -150px;
         width: 70px;
@@ -233,8 +171,8 @@
     }
 }
 
-@media (min-width: 900px) and (max-width: 1150px){
-    .ellipse_0 { 
+@media (min-width: 900px) and (max-width: 1150px) {
+    .ellipse_0 {
         top: -70px;
         right: -150px;
         width: 70px;
@@ -243,12 +181,13 @@
 
     .flyingRight {
         width: 50%;
-        
+
     }
+
     .flyingLeft {
         width: 50%;
     }
-   
+
     .button {
         width: 150px;
     }
@@ -260,7 +199,6 @@
         gap: 20px;
         width: 100%;
 
-
         .skill {
             font-size: 0.9em !important;
             color: var(--main-color);
@@ -269,44 +207,45 @@
         p {
             margin-top: 10px;
             font-size: 0.5em !important;
-
         }
     }
 }
 
-
-
 @media (max-width: 900px) {
     .workContainer {
-         gap: 60px !important;
+        gap: 60px !important;
     }
+
     .center {
         text-align: center;
     }
+
     .button {
         width: 130px;
     }
+
     .flyingLeft {
         width: 100% !important;
     }
+
     .flyingRight {
         width: 100% !important;
     }
+
     .ellipse8 {
         top: -300px;
         right: 160px;
     }
-    .ellipse_0 { 
+
+    .ellipse_0 {
         top: -80px;
         right: 0px;
         width: 50px;
         height: 50px;
-}
+    }
 
     .workContainer {
         flex-direction: column;
-
-
     }
 
     .reverse {
@@ -316,35 +255,24 @@
     .contentContainer {
         flex-direction: column;
     }
-
-    // .start {
-    //     padding: 100px 40px 0px 40px;
-    //     display: flex;
-    //     justify-content: center;
-
-    //     .flyingRight {
-    //         display: flex;
-    //         justify-content: space-around;
-    //     }
-
-    // }
 }
 
 @media (max-width: 500px) {
 
-   
-.flyingLeft {
-    align-items: center;
-    justify-content: center;
-}
-.flyingRight {
-    align-items: center;
-    justify-content: center;
-}
+    .flyingLeft {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flyingRight {
+        align-items: center;
+        justify-content: center;
+    }
 
     .contentContainer {
-       padding:  50px 20px 50px 20px;
+        padding: 50px 20px 50px 20px;
     }
+
     .ellipse8 {
         top: -260px;
         right: 70px;
@@ -352,12 +280,13 @@
         height: 40px;
         border-radius: 40px;
     }
-    .ellipse_0 { 
+
+    .ellipse_0 {
         top: -50px;
         right: 0px;
         width: 50px;
         height: 50px;
-}
+    }
 }
 
 @media (max-width: 350px) {

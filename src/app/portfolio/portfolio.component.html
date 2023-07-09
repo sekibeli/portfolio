@@ -1,40 +1,44 @@
 <div class="overflow">
-
-<div class="contentContainer" >
-
-
+  <div class="contentContainer">
     <div data-aos="zoom-in" id="myWork">
-        <div class="flyingLeft workBox"><h2>{{"Meine Arbeit" | translate}}</h2>
-       <p>{{"Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!" | translate }}</p></div>
-   <div class="flyingRight">
-       <div class="ellipse ellipse8"></div>
-   </div>
-</div>
- 
-    <div *ngFor="let work of allWork; let i = index">
-        <div [ngClass]="{'reverse': i%2 != 0}" class="workContainer">
-            <div class="flyingLeft center">
-                <div data-aos="flip-up">
-                <a href="{{work.testUrl}}" target="_blank"><img src="./../assets/img/work/{{work.img}}.png" alt=""></a>
-                </div>
-                <div class="ellipse ellipse{{i}}"></div>
-                <div class="ellipse ellipse_{{i}}"></div>
-            </div>
-            <div class="flyingRight center" [ngClass]="{'right': i%2 != 0}">
-                <div data-aos="fade-up">
-                    <h3>{{work.title}}</h3>
-                    <div class="skill">{{work.dev}}</div>
-                    <p>{{work.description | translate}}</p>
-                    <div>
-                        <a href="{{work.gitUrl}}" target="_blank"><button class="button">Github</button></a>
-                        <a href="{{work.testUrl}}" target="blank" > <button class="button">{{"Teste es" | translate }}</button></a>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-
+      <div class="flyingLeft workBox">
+        <h2>{{ "Meine Arbeit" | translate }}</h2>
+        <p>
+          {{
+            "Hier findest Du einige meiner Arbeiten. Sie entstanden während meiner Ausbildung bei der Developer-Akademie. Viel Spaß beim Ausprobieren!"
+              | translate
+          }}
+        </p>
+      </div>
+      <div class="flyingRight">
+        <div class="ellipse ellipse8"></div>
+      </div>
     </div>
-   
-</div>
+
+    <div *ngFor="let work of allWork; let i = index">
+      <div [ngClass]="{ reverse: i % 2 != 0 }" class="workContainer">
+        <div class="flyingLeft center">
+          <div data-aos="flip-up">
+            <a href="{{ work.testUrl }}" target="_blank"
+              ><img src="./../assets/img/work/{{ work.img }}.png" alt=""/></a>
+          </div>
+          <div class="ellipse ellipse{{ i }}"></div>
+          <div class="ellipse ellipse_{{ i }}"></div>
+        </div>
+        <div class="flyingRight center" [ngClass]="{ right: i % 2 != 0 }">
+          <div data-aos="fade-up">
+            <h3>{{ work.title }}</h3>
+            <div class="skill">{{ work.dev }}</div>
+            <p>{{ work.description | translate }}</p>
+            <div>
+              <a href="{{ work.gitUrl }}" target="_blank"
+                ><button class="button">Github</button></a>
+              <a href="{{ work.testUrl }}" target="blank">
+                <button class="button">{{ "Teste es" | translate }}</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

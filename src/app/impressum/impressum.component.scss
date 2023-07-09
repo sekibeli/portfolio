@@ -1,7 +1,7 @@
 .contentContainer {
     position: relative;
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .impressum {
@@ -23,21 +23,19 @@
     top: 28vh;
     right: 20vw;
 }
+
 .abs {
-    margin:10px 0 10px 0;
+    margin: 10px 0 10px 0;
     font-weight: bold;
     color: var(--main-color);
 }
 
-
 .picBack {
-   
     transform: rotate(270deg);
 
     &:hover {
         filter: brightness(1.5);
     }
-   
 }
 
 .contentContainer {
@@ -49,7 +47,7 @@ p {
     color: var(--main-color);
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
     .contentContainer {
         padding: 50px 20px 50px 20px;
     }

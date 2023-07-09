@@ -16,7 +16,13 @@
       
     </div>
     <div data-aos="zoom-in" class="flyingRight">
-      <div class="inputFields">
+      <div *ngIf="emailSend" class="thankYou">
+        <img src="../../assets/img/smily.svg" alt="">
+       <div class="center">{{"Vielen Dank für Deine Nachricht! Ich melde mich umgehend bei Dir." | translate}}</div>
+       
+
+      </div>
+      <div *ngIf="!emailSend" class="inputFields">
         <form action="javascript:void(0)" [formGroup]="form" (submit)="send()">
           <div class="field">
             <div [ngClass]="{
@@ -118,5 +124,3 @@
   </div>
 </div>
 
-<!-- <a target="_blank" href="https://icons8.com/icon/70yRC8npwT3d/ok">OK</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-<!-- <a target="_blank" href="https://icons8.com/icon/HZhl4S0tHUuX/hohe-priorit%C3%A4t">Ausrufezeichen</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->

@@ -49,9 +49,4 @@ allWork = [
     testUrl: 'https://jg-ringoffire.web.app/'
   }
 ]
-
-
 }
-
-
-//'Hierbei handelt es sich um einen Taskmanager, der auf dem Prinzip des Kanban-Systems aufbaut. Du hast die Möglichkeit, deine Aufgaben ganz einfach mittels Drag-and-Drop zu organisieren, zu erstellen, zu bearbeiten und zu löschen. Zudem kannst du individuelle Kategorien einrichten und jeder Aufgabe gezielt Mitarbeiter zuweisen.',

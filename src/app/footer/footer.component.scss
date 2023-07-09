@@ -4,40 +4,52 @@
     background: radial-gradient(338.54% 243.13% at 28.82% -124.40%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
     color: white;
     padding: 80px 100px 30px 100px;
-    
-.contactButtons {
-    display: flex;
-    gap: 30px;
-}
-.footer_mid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    a {
-        font-size: 0.7em;
-        color: white;
-        text-decoration: none;
 
+    .contactButtons {
+        display: flex;
+        gap: 30px;
+
+        img {
+            &:hover {
+                filter: opacity(0.5);
+            }
+        }
     }
 
-    span {
-        margin-bottom: 50px;
+    .footer_mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-size: 0.7em;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        span {
+            margin-bottom: 50px;
+        }
     }
 }
-   
+
+@media (max-width: 1300px) {
+    .contentContainer {
+        padding: 80px 50px 20px 50px;
+    }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
     .contentContainer {
         align-items: center;
-    flex-direction: column;
-    padding: 30px 10px 30px 10px;
-}
+        flex-direction: column;
+        padding: 30px 10px 30px 10px;
+    }
 
-.footer_mid {
-    text-align: center;
+    .footer_mid {
+        text-align: center;
+    }
 }
-}
-    

@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
+  emailSend = false;
   form: FormGroup = this.fb.group({
     from_name: new FormControl('', Validators.required),
     to_name: 'Admin',
@@ -30,18 +30,16 @@ export class ContactComponent {
         from_email: this.form.value.from_email,
         message: this.form.value.message,
       });
+      this.emailSend = true;
 
-      alert('Nachricht wurde versendet!');
       this.form.reset();
     }
-    else {
-      console.log('Angaben fehlen!');
-    }
+
   }
 
-  scrollToTop(){
+  scrollToTop() {
     document.body.scrollTop = 0; // Für Safari
-  document.documentElement.scrollTop = 0; // Für Chrome, Firefox, IE und Opera
+    document.documentElement.scrollTop = 0; // Für Chrome, Firefox, IE und Opera
   }
 
 }
