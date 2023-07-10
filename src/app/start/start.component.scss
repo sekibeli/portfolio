@@ -98,7 +98,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    z-index: 50;
+    z-index: 30;
 
     img {
         &:hover {
@@ -111,7 +111,7 @@
 
     .ellipse3 {
         position: absolute;
-        left: -150px;
+        left: -185px;
         top: -20%;
         height: 800px;
         width: 800px;
@@ -212,6 +212,7 @@
     }
 
     .startLeft {
+        display: flex;
         justify-content: center;
         position: relative;
         width: 100vw;

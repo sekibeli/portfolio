@@ -7,11 +7,15 @@
     height: 100px;
     display: flex;
     width: 100%;
-    padding: 20px 100px;
+    padding: 30px 100px;
     justify-content: space-between;
     align-items: center;
     z-index: 50;
-    height: 10vh;
+    height: 15vh;
+
+    span {
+        font-size: 1.4em;
+    }
 
     @media (max-width: 1300px) {
         padding: 37px 50px;
@@ -25,16 +29,19 @@
         z-index: 30;
         height: 60px;
         width: 190px;
-
-
     }
 
     a {
+        font-size: 1.4em;
         color: #5988FF;
         text-decoration: none;
     }
 }
 
+.noScroll {
+   position: fixed;
+   overflow: hidden;
+}
 .rightMenu {
     display: flex;
 }
@@ -90,31 +97,34 @@ li {
     cursor: pointer;
 
     i {
+        text-align: right;
         color: var(--main-color);
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1150px) {
         display: block;
     }
 }
 
 .menu {
     display: flex;
-    gap: 18px;
+    gap: 24px;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1150px) {
 
         display: none;
 
         &.is-open {
             z-index: 40;
-            display: block;
-            position: absolute;
-            padding: 20vh 30px;
+            display: flex;
+            flex-direction:column;
+            position: fixed;
+            padding: 20vh 40px;
             top: 0px;
             right: 0;
             max-width: 100vw;
             height: 100vh;
+            box-shadow: -4px 0px 23px -4px rgba(143,143,143,1);
             background: linear-gradient(180deg, #FFF 0%, #EAF0FF 100%);
             transition: 1s;
 
@@ -126,6 +136,7 @@ li {
     }
 
     .menu-item {
+        font-size: 1.4em;
         height: 30px;
         display: flex;
         color: var(--main-color);
@@ -137,5 +148,12 @@ li {
         @media (max-width: 900px) {
             height: 40px;
         }
+    }
+}
+
+@media(max-width: 400px){
+    .rightMenu {
+        flex-direction: column-reverse;
+        align-items:flex-end;
     }
 }

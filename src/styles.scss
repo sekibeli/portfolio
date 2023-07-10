@@ -41,9 +41,16 @@ h3 {
     font-family: 'baloo 2';
     color: var(--main-color);
     font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
 }
 
 .contentContainer {
+    font-size: 1.4em;
+    line-height: 120%;
     display: flex;
     padding: 150px 100px 150px 100px;
     gap: 20px;
@@ -56,9 +63,8 @@ h3 {
     border: 1px solid #5988FF;
     border-radius: 5px;
     background-color: white;
-    margin-top: 20px;
-    width: 200px;
-    font-size: 0.8em;
+    // margin-top: 20px;
+    font-size: 1.0em;
     transition: 1s;
 
     &:hover {
@@ -101,8 +107,16 @@ h3 {
 
 @media (max-width: 700px) {
     h2 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 65px;
+        line-height: 65px;
         margin: 20px 0 50px 0;
+    }
+
+    @media (max-width: 500px) {
+        h2 {
+            font-size: 50px;
+            line-height: 50px;
+            ;
+        }
     }
 }

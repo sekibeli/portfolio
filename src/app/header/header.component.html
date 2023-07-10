@@ -7,9 +7,9 @@
     </li>
    
     <li class="menu" [class.is-open]="isMenuOpen">
-        <a class="menu-item" href="#aboutMe">{{"Über mich" | translate }}</a>
-       <a class="menu-item" href="#skills">{{"Kompetenzprofil" | translate}}</a>
-        <a class="menu-item" href="#myWork">{{"Meine Arbeiten" | translate }}</a>
+        <a class="menu-item" href="#aboutMe" (click)="closeMenu()">{{"Über mich" | translate }}</a>
+       <a class="menu-item" href="#skills" (click)="closeMenu()">{{"Kompetenzen" | translate}}</a>
+        <a class="menu-item" href="#myWork" (click)="closeMenu()">{{"Meine Arbeiten" | translate }}</a>
     </li>
     <li class="language">
         <a (click)="translate.use('de')">DE</a><span>|</span>
