@@ -63,7 +63,6 @@ p {
     border: 1px solid #5988FF;
     border-radius: 5px;
     background-color: white;
-    // margin-top: 20px;
     font-size: 1.0em;
     transition: 1s;
 
@@ -87,6 +86,10 @@ p {
 }
 
 @media (max-width: 1300px) {
+    h2 {
+        line-height: 80px;
+        font-size: 80px;
+    }
     .contentContainer {
         padding: 100px 50px 100px 50px;
     }
@@ -100,7 +103,6 @@ p {
 
 @media (max-width: 900px) {
     h2 {
-        font-size: 80px;
         text-align: center;
     }
 }
