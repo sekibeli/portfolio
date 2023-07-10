@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-header',
@@ -21,16 +22,15 @@ toggleMenu(): void {
 
   if(this.isMenuOpen){
        document.body.style.overflow = "hidden";
-       console.log("openMenu");
+      
   }
   else {
-    console.log("closeMenu");
+   
     document.body.style.overflow = "";
   }
 }
 
 closeMenu(){
-  console.log("closeMenu");
   document.body.style.overflow = "";
   if(this.isMenuOpen){
     this.isMenuOpen = false;
