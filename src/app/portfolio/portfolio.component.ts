@@ -39,14 +39,14 @@ allWork = [
     testUrl: 'https://julia-georgiew.developerakademie.net/lamamaloca/index.html'
   },
   {
-    title:  'Ring of Fire',
-    dev: 'Angular | Firebase',
-    description: 'Ring of Fire Beschreibung',
-    img: 'ring',
+    title:  'DABubble',
+    dev: 'Angular | Typescript | SCSS | Firebase',
+    description: 'Dabubble Beschreibung',
+    img: 'dabubble',
     buttonGit:'Github',
-    gitUrl: 'https://github.com/sekibeli/ringoffire',
+    gitUrl: 'https://github.com/sekibeli/dabubble',
     buttonShow:'Test it',
-    testUrl: 'https://jg-ringoffire.web.app/'
+    testUrl: 'https://my-dabubble.web.app/'
   }
 ]
 }
